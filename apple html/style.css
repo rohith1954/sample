@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+/* Style the Learn more and Buy links */
+.link a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.link a img {
+    margin-left: 10px;
+}
+
+/* Style the product photo */
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the search and shopping icons */
+.icon img,
+.shopping img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* You can add more styles as needed */
