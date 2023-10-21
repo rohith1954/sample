@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    background-color: #f3f4f5;
+    color: rgb(8, 5, 5);
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    align-items: center;
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+}
+
+nav ol li {
+    margin-right: 20px;
+}
+
+.contact p {
+    font-weight: bold;
+}
+
+.icons i {
+    margin-right: 10px;
+}
+
+
+.login span {
+    margin-left: 5px;
+}
+
+.free-btn {
+    background-color:rgb(6, 139, 13);
+    color: rgb(5, 4, 4);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
