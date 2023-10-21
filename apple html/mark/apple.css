@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a[target="_self"] {
+    color: #2997FF;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: black;
+    height: 44px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .link ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .link ol li {
+    margin: 10px;
+}
+
+header ol .icons i {
+    color: white;
+    font-size: 17px;
+}
+
+header ol li a,
+i {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .icon ol,
+header .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header .icon ol li,
+header .app a i {
+    margin: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.header .icon ol .navicon {
+    color: white;
+}
+
+.hidden-links {
+    display: none;
+}
+
+header .link ol .navicon i {
+    display: none;
+    color: white;
+    font-size: 17px;
+}
+
+
+/* Navigation Offer */
+
+.nav-offer {
+    height: 50px;
+    width: 100%;
+    background-color: #1c2739;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-offer .offer {
+    width: 1421px;
+    color: wheat;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-offer .offer a {
+    text-decoration: none;
+    color: orangered;
+}
+
+.nav-offer .offer a:hover {
+    text-decoration: underline orangered;
+}
+
+
+/* Banner Section */
+
+.banner1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-align: center;
+    top: 0;
+    height: 580px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.banner1::before {
+    background: url(images/iphone-pro15.png) no-repeat;
+    background-size: cover;
+    content: "";
+    width: 100%;
+    height: 580px;
+    position: absolute;
+}
+
+.name,
+.des {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.des {
+    font-size: 25px;
+    line-height: 2;
+}
+
+.heading a {
+    text-decoration: none;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading .buy {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.banner1 .heading {
+    position: absolute;
+    top: 15px;
+}
+
+.banner-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-align: center;
+    top: 0;
+    height: 580px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.banner-2::before {
+    background: url(images/iphone-15_overview__gm0jynt55aai_og.png) no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 580px;
+}
+
+.banner-2 p {
+    color: black;
+}
+
+.banner-2 .heading {
+    position: absolute;
+    top: 20px;
+}
+
+.banner-2 .iphone-camera {
+    position: absolute;
+    bottom: 0;
+}
+
+.banner-2 .heading a {
+    line-height: 1.5;
+}
+
+.banner-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    top: 0;
+    height: 580px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.banner-3::before {
+    background: url(images/Apple-Watch-S9-hero-230912_Full-Bleed-Image.jpg.large.jpg) no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 580px;
+}
+
+.banner-3 .heading .watch {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-3 .heading .series {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.banner-3 .heading .des {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.banner-3 .heading {
+    position: absolute;
+    top: 30px;
+}
+
+.banner1 .heading a:hover {
+    text-decoration: underline #2997FF;
+}
+
+.banner-2 .heading a:hover {
+    text-decoration: underline #2997FF;
+}
+
+.banner-3 .heading a:hover {
+    text-decoration: underline #2997FF;
+}
+
+
+/* Box-Section */
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.box1 ol {
+    background-color: rgb(2, 2, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 742px;
+    height: 580px;
+    list-style: none;
+}
+
+.box2 ol {
+    background-color: rgb(245, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 742px;
+    height: 580px;
+    list-style: none;
+}
+
+.box3 ol {
+    background-color: rgb(245, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 742px;
+    height: 580px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.box4 ol {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 742px;
+    height: 580px;
+    margin-top: 10px;
+    list-style: none;
+    position: relative;
+}
+
+.box5 ol {
+    background-color: rgb(245, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 742px;
+    height: 580px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.box6 ol {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 742px;
+    height: 580px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.box1 ol .count {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    font-weight: bolder;
+}
+
+.box1 ol .festive p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    line-height: 2;
+}
+
+.box1 ol .date a {
+    font-size: 21px;
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 3;
+}
+
+.box1 ol .date a:hover {
+    text-decoration: underline orangered;
+}
+
+.box2 ol .watch,
+i {
+    font-size: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 0;
+}
+
+.box2 ol .ultra {
+    font-size: 17px;
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+
+.box2 ol .next {
+    font-size: 25px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.box2 ol .watch {
+    margin-top: 40px;
+}
+
+.box2 ol .link a,
+.box3 ol .link a,
+.box4 ol .link a,
+.box6 ol .link a {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.box2 ol .link a:hover {
+    text-decoration: underline #2997FF;
+}
+
+.box2 ol .link .buy,
+.box3 ol .link .buy,
+.box4 ol .link .buy,
+.box6 ol .link .buy {
+    padding-left: 25px;
+    line-height: 3;
+}
+
+.box3 ol .mac {
+    font-size: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.box3 ol .impress {
+    font-size: 21px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.box3 ol .link a:hover {
+    text-decoration: underline #2997FF;
+}
+
+.box4 ol .pad {
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.box4 ol .superchange {
+    font-size: 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 ol .link a:hover {
+    text-decoration: underline #2997FF;
+}
+
+.box5 ol .trade,
+i {
+    font-size: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.box5 ol .upgrade {
+    font-size: 24px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.box5 ol .see a {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 2;
+    color: #2997FF;
+}
+
+.box5 ol .see a:hover {
+    text-decoration: underline #2997FF;
+}
+
+.box6 ol .air {
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    line-height: 2;
+}
+
+.box6 ol .adapt {
+    font-size: 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.box6 ol .link {
+    line-height: 2;
+}
+
+.box6 ol .link a:hover {
+    text-decoration: underline #2997FF;
+}
+
+
+/* Carousel-Section */
+
+.apple-tv img {
+    max-width: 100%;
+    max-height: 668px;
+}
+
+.apple-tv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* Footer-Section */
+
+footer {
+    width: 100%;
+    background-color: #f5f5f7;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.subscription p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    color: #6e6e73;
+}
+
+section {
+    width: 70%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 398px;
+}
+
+.footer-links ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-links ol li {
+    margin: 4px;
+}
+
+.footer-links ol li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #424245;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d1d1f;
+}
+
+.footer-links ol li a:hover {
+    text-decoration: underline #000;
+}
+
+.first-2,
+.second-2,
+.fourth-2,
+.fourth-3,
+.fifth-2 {
+    margin-top: 20px;
+}
+
+.end-section {
+    height: 180px;
+}
+
+.more-ways {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e73;
+    padding: 35px 0px 10px 0px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.copyright .middle ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright .start p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e73;
+    font-size: 12px;
+}
+
+.copyright .middle ol li,
+.copyright .middle ol li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e73;
+    font-size: 12px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.copyright .middle ol li .copy-link {
+    border-right: 1px solid #d2d2d7;
+}
+
+.copyright .end span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e73;
+    font-size: 12px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 785px) {
+    header .link ol,
+    .links {
+        display: none;
+    }
+    header .app {
+        position: absolute;
+        left: 0;
+    }
+    header .icon {
+        position: absolute;
+        right: 0;
+    }
+    header .icon ol .navicon i {
+        display: block;
+        color: white;
+        font-size: 17px;
+    }
+    
+    .footer-links {
+        display: none;
+    }
+    .hidden-links {
+        display: block;
+    }
+    .hidden-links .second,
+    .hidden-links .fourth,
+    .hidden-links .sixth,
+    .hidden-links .eigth {
+        border-top: 1px solid #d2d2d7;
+        border-bottom: 1px solid #d2d2d7;
+    }
+    .hidden-links .ninth {
+        border-bottom: 1px solid #d2d2d7;
+    }
+    .hidden-links .first,
+    .hidden-links .second,
+    .hidden-links .third,
+    .hidden-links .fourth,
+    .hidden-links .fifth,
+    .hidden-links .sixth,
+    .hidden-links .seventh,
+    .hidden-links .eigth,
+    .hidden-links .ninth {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hidden-links p,i{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    color: #424245;
+
+    }
+    section {
+        width: 100%;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .copyright .middle ol li,
+    .copyright .middle ol li a {
+        font-size: 12px;
+        padding-right: 8px;
+    }
+}
